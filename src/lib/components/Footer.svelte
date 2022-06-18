@@ -1,0 +1,30 @@
+<script lang="ts">
+  const socialLinks = [
+    {
+      href: 'https://github.com/pokedotdev',
+      icon: 'i-simple-icons:github',
+    },
+    {
+      href: 'https://twitter.com/pokedotdev',
+      icon: 'i-simple-icons:twitter',
+    },
+  ]
+</script>
+
+<footer class="container my-8 flex items-center justify-between">
+  <span class="bg-text-end text-2xl font-black">The End.</span>
+  <ul class="flex gap-6">
+    {#each socialLinks as social}
+      <li class="flex items-center">
+        <a
+          href={social.href}
+          class="text-xl text-gray-400 hover:scale-110 hover:text-black"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class={social.icon} />
+        </a>
+      </li>
+    {/each}
+  </ul>
+</footer>
