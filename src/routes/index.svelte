@@ -18,7 +18,7 @@
       <h3>Projects</h3>
     </header>
     <div class="mt-6">
-      <article class="grid grid-cols-2 gap-8">
+      <article class="grid gap-8 lg:grid-cols-2">
         <a
           href="https://zonacraft.net"
           target="_blank"
@@ -30,23 +30,25 @@
             style="background-image: url('/images/zonacraft.png'); background-size: 100% auto;"
           />
         </a>
-        <div class="">
-          <h2 class="my-4 text-3xl font-black">ZonaCraft</h2>
+        <div class="flex flex-col justify-center">
+          <h2 class="mb-4 text-3xl font-black">ZonaCraft</h2>
           <p class="text-lg leading-relaxed text-gray-600">
             Minecraft website for the Hispanic community. With more than 5
             million visitors per month.
           </p>
-          <a
-            href="https://zonacraft.net"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="group mt-4 inline-flex items-center gap-3 rounded-lg bg-black py-2 px-4 text-lg font-bold text-white transition-all hover:gap-4"
-          >
-            See it
-            <div
-              class="i-carbon:arrow-right transition-transform group-hover:-rotate-45"
-            />
-          </a>
+          <div>
+            <a
+              href="https://zonacraft.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group mt-4 inline-flex items-center gap-3 rounded-lg bg-black py-2 px-4 text-lg font-bold text-white transition-all hover:gap-4"
+            >
+              See it
+              <div
+                class="i-carbon:arrow-right transition-transform group-hover:-rotate-45"
+              />
+            </a>
+          </div>
         </div>
       </article>
     </div>
@@ -59,7 +61,7 @@
         <div class="i-ph:heart-fill scale-110 text-rose-500" />
       </div>
     </header>
-    <div class="mt-6 grid grid-cols-2 gap-6">
+    <div class="mt-6 grid gap-6 md:grid-cols-2">
       <a href="https://github.com/pokedotdev/twitter-clone">
         <article
           class="flex flex-col rounded-lg bg-gray-100 py-6 px-6 transition-all hover:rounded-3xl"

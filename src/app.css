@@ -13,6 +13,6 @@
 
 @layer utilities {
   .container {
-    @apply mx-auto max-w-screen-md;
+    @apply mx-auto max-w-screen-md px-6 lg:px-0;
   }
 }
