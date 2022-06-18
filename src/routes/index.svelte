@@ -3,8 +3,8 @@
 </svelte:head>
 
 <div class="container">
-  <section class="my-24">
-    <h1 class="bg-text-end text-5xl font-black leading-tight">Hey there.</h1>
+  <section class="mb-24 mt-16">
+    <h1 class="text-5xl font-black leading-tight">Hey there.</h1>
     <!-- Write a personal description -->
     <hr class="my-4 w-32" />
     <p class="text-2xl leading-normal text-gray-600">
@@ -23,12 +23,11 @@
           href="https://zonacraft.net"
           target="_blank"
           rel="noopener noreferrer"
-          class="group block aspect-[6/4] flex-none cursor-pointer overflow-hidden rounded-lg bg-slate-800 transition-all duration-500 hover:rounded-3xl"
+          class="group block aspect-[6/4] flex-none cursor-pointer overflow-hidden rounded-lg bg-slate-500 transition-all  duration-500 hover:rounded-3xl"
         >
-          <img
-            class="h-full w-full translate-x-8 translate-y-8 rounded-xl object-cover transition-all duration-500 group-hover:translate-y-5 group-hover:translate-x-5 group-hover:rounded-2xl"
-            src="/images/zonacraft.png"
-            alt="zonacraft website"
+          <div
+            class="h-full w-full translate-x-8 translate-y-8 rounded-lg transition-all duration-500 group-hover:translate-y-5 group-hover:translate-x-5 group-hover:rounded-2xl"
+            style="background-image: url('/images/zonacraft.png'); background-size: 100% auto;"
           />
         </a>
         <div class="">

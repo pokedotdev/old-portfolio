@@ -15,15 +15,4 @@
   .container {
     @apply mx-auto max-w-screen-md;
   }
-  .bg-text-end {
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-image: url('/images/end.gif');
-    background-size: 200px;
-  }
-  .bg-end {
-    background-image: url('/images/end.gif');
-    background-size: 200px;
-  }
 }
