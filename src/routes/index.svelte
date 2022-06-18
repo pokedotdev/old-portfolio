@@ -1,3 +1,23 @@
+<script lang="ts">
+  const openSourceProjects = [
+    {
+      title: 'Twitter Clone',
+      description: 'Made with Remix & CF Workers',
+      href: 'https://github.com/pokedotdev/twitter-clone',
+    },
+    {
+      title: 'Tokyo Night Insomnia',
+      description: 'Theme for Insomnia app.',
+      href: 'https://github.com/pokedotdev/tokyo-night-insomnia',
+    },
+    {
+      title: 'WP Tailwind',
+      description: 'WordPress template with TailwindCSS.',
+      href: 'https://poke.dev/pokedotdev/wp-tailwind',
+    },
+  ]
+</script>
+
 <svelte:head>
   <title>@pokedotdev</title>
 </svelte:head>
@@ -62,30 +82,16 @@
       </div>
     </header>
     <div class="mt-6 grid gap-6 md:grid-cols-2">
-      <a href="https://github.com/pokedotdev/twitter-clone">
-        <article
-          class="flex flex-col rounded-lg bg-gray-100 py-6 px-6 transition-all hover:rounded-3xl"
-        >
-          <h2 class="text-lg font-bold">Twitter Clone</h2>
-          <p>Made with Remix & CF Workers.</p>
-        </article>
-      </a>
-      <a href="https://github.com/pokedotdev/tokyo-night-insomnia">
-        <article
-          class="flex flex-col rounded-lg bg-gray-100 py-6 px-6 transition-all hover:rounded-3xl"
-        >
-          <h2 class="text-lg font-bold">Tokyo Night Insomnia</h2>
-          <p>Theme for Insomnia app.</p>
-        </article>
-      </a>
-      <a href="https://github.com/pokedotdev/wp-tailwind">
-        <article
-          class="flex flex-col rounded-lg bg-gray-100 py-6 px-6 transition-all hover:rounded-3xl"
-        >
-          <h2 class="text-lg font-bold">WP Tailwind</h2>
-          <p>WordPress template with TailwindCSS.</p>
-        </article>
-      </a>
+      {#each openSourceProjects as project}
+        <a href={project.href} target="_blank" rel="noopener noreferrer">
+          <article
+            class="flex flex-col rounded-lg bg-gray-100 py-6 px-6 transition-all hover:rounded-3xl"
+          >
+            <h2 class="text-lg font-bold">{project.title}</h2>
+            <p>{project.description}</p>
+          </article>
+        </a>
+      {/each}
     </div>
   </section>
 </div>
