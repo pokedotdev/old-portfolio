@@ -1,9 +1,11 @@
 <div
-  class="h-12 w-12 overflow-hidden rounded-full border-4 border-white bg-gray-400 bg-gradient-to-tl from-gray-500 transition-all duration-300"
+  class="h-12 w-12 overflow-hidden rounded-full border-4 border-white bg-gray-300 bg-gradient-to-tl from-gray-400 transition-all duration-300"
 >
   <img
     class="pointer-events-none"
     src="/images/avatar:alpha.svg"
+    width="100%"
+    height="auto"
     alt="avatar"
   />
 </div>
