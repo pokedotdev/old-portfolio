@@ -58,8 +58,8 @@
           aria-label="Go to ZonaCraft website"
         >
           <div
-            class="h-full w-full translate-x-8 translate-y-8 rounded-lg transition-all duration-500 group-hover:translate-y-5 group-hover:translate-x-5 group-hover:rounded-2xl"
-            style="background-image: url('/images/zonacraft-preview.webp'); background-size: 100% auto;"
+            class="mt-8 ml-8 h-full w-full rounded-lg transition duration-500 group-hover:-translate-y-3 group-hover:-translate-x-3 group-hover:rounded-2xl"
+            style="background-image: url('/images/zonacraft-preview.webp'); background-size: 100% auto; transition-property: transform, border-radius;"
           />
         </a>
         <div class="flex flex-col justify-center">
@@ -73,7 +73,8 @@
               href="https://zonacraft.net"
               target="_blank"
               rel="noopener noreferrer"
-              class="group mt-4 inline-flex items-center gap-3 rounded-lg bg-black py-2 px-4 text-lg font-bold text-white transition-all hover:gap-4"
+              class="group mt-4 inline-flex items-center gap-3 rounded-lg bg-black py-2 px-4 text-lg font-bold text-white transition hover:gap-4"
+              style="transition-property: gap;"
             >
               See it
               <div
@@ -97,11 +98,14 @@
       {#each openSourceProjects as project}
         <a href={project.href} target="_blank" rel="noopener noreferrer">
           <article
-            class="group flex flex-col rounded-lg bg-gray-100 py-6 px-6 transition-all hover:bg-gray-200"
+            class="group flex flex-col rounded-lg bg-gray-100 py-6 px-6 transition-colors hover:bg-gray-200"
           >
             <h2 class="text-lg font-bold">{project.title}</h2>
             <p>{project.description}</p>
-            <ul class="mt-2 flex gap-2 grayscale group-hover:grayscale-0">
+            <ul
+              class="mt-2 flex gap-2 grayscale transition group-hover:grayscale-0"
+              style="transition-property: filter;"
+            >
               {#each project.tools as icon}
                 <li class={icon} />
               {/each}
