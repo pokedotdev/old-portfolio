@@ -1,3 +1,5 @@
+const theme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss/types').Config} */
 const config = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
@@ -5,7 +7,8 @@ const config = {
   theme: {
     container: false,
     fontFamily: {
-      sans: ["Inter", "sans-serif"],
+      ...theme.fontFamily,
+      sans: ["InterVariable", ...theme.fontFamily.sans],
     },
     extend: {},
   },

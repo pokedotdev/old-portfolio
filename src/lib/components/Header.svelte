@@ -25,10 +25,7 @@
     <ul class="flex gap-4">
       {#each menu as item}
         <li>
-          <a
-            href={item.href}
-            class="font-mono rounded-full py-3 px-4 hover:bg-gray-100"
-          >
+          <a href={item.href} class="rounded-full py-3 px-4 hover:bg-gray-100">
             {item.text}
           </a>
         </li>

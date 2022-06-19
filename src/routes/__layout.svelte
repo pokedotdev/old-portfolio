@@ -1,5 +1,6 @@
 <script lang="ts">
   import '../app.css'
+  import '@fontsource/inter/variable.css'
   import { Header, Footer } from '$lib/components'
 </script>
 

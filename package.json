@@ -1,6 +1,7 @@
 {
   "name": "pokedotdev",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -12,6 +13,9 @@
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check --plugin-search-dir=. . && eslint .",
     "format": "prettier --write --plugin-search-dir=. ."
+  },
+  "dependencies": {
+    "@fontsource/inter": "^4.5.11"
   },
   "devDependencies": {
     "@iconify/json": "^2.1.63",
@@ -34,6 +38,5 @@
     "tslib": "^2.3.1",
     "typescript": "^4.7.2",
     "unocss": "^0.39.2"
-  },
-  "type": "module"
+  }
 }
