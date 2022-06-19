@@ -35,7 +35,7 @@
 
 <div class="container">
   <section class="mb-24 mt-16">
-    <h1 class="text-5xl font-black leading-tight">Hey there.</h1>
+    <p class="text-5xl font-black leading-tight">Hey there.</p>
     <!-- Write a personal description -->
     <hr class="my-4 w-32" />
     <p class="text-xl leading-normal text-gray-600">
@@ -46,7 +46,7 @@
 
   <section>
     <header class="text-lg font-bold">
-      <h3 class="text-xl">Projects</h3>
+      <h2 class="text-xl">Projects</h2>
     </header>
     <div class="mt-6">
       <article class="grid gap-8 lg:grid-cols-2">
@@ -55,6 +55,7 @@
           target="_blank"
           rel="noopener noreferrer"
           class="group block aspect-[6/4] flex-none cursor-pointer overflow-hidden rounded-lg bg-slate-500"
+          aria-label="Go to ZonaCraft website"
         >
           <div
             class="h-full w-full translate-x-8 translate-y-8 rounded-lg transition-all duration-500 group-hover:translate-y-5 group-hover:translate-x-5 group-hover:rounded-2xl"
@@ -88,7 +89,7 @@
   <section class="my-16">
     <header class="text-lg font-bold">
       <div class="flex items-center gap-2">
-        <h3 class="text-xl">Open Source</h3>
+        <h2 class="text-xl">Open Source</h2>
         <div class="i-ph:heart-fill scale-110 text-rose-500" />
       </div>
     </header>

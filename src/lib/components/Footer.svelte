@@ -3,10 +3,12 @@
     {
       href: 'https://github.com/pokedotdev',
       icon: 'i-simple-icons:github',
+      label: 'GitHub',
     },
     {
       href: 'https://twitter.com/pokedotdev',
       icon: 'i-simple-icons:twitter',
+      label: 'Twitter',
     },
   ]
 </script>
@@ -21,6 +23,7 @@
           class="text-xl text-gray-400 hover:scale-110 hover:text-black"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Go to {social.label} profile"
         >
           <div class={social.icon} />
         </a>
