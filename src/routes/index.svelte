@@ -58,7 +58,7 @@
         >
           <div
             class="h-full w-full translate-x-8 translate-y-8 rounded-lg transition-all duration-500 group-hover:translate-y-5 group-hover:translate-x-5 group-hover:rounded-2xl"
-            style="background-image: url('/images/zonacraft-preview.png'); background-size: 100% auto;"
+            style="background-image: url('/images/zonacraft-preview.webp'); background-size: 100% auto;"
           />
         </a>
         <div class="flex flex-col justify-center">
