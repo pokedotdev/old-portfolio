@@ -4,9 +4,9 @@
   <img
     class="pointer-events-none"
     src="/images/avatar:alpha.svg"
-    width="100%"
+    width="48"
     height="48"
-    alt="48"
+    alt="poke's avatar"
   />
 </div>
 
