@@ -77,9 +77,7 @@
               style="transition-property: gap;"
             >
               See it
-              <div
-                class="i-carbon:arrow-right transition-transform group-hover:-rotate-45"
-              />
+              <div class="i-carbon:arrow-right" />
             </a>
           </div>
         </div>
