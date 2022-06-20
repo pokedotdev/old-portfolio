@@ -1,5 +1,6 @@
 <script lang="ts">
   import { Avatar } from '.'
+  import { page } from '$app/stores'
 
   const menu = [
     {
@@ -25,7 +26,11 @@
     <ul class="flex gap-4">
       {#each menu as item}
         <li>
-          <a href={item.href} class="rounded-full py-3 px-4 hover:bg-gray-100">
+          <a
+            href={item.href}
+            class="block rounded-full py-3 px-4 text-gray-600 transition-colors hover:bg-gray-100 hover:text-black"
+            class:text-black={$page.url.pathname === item.href}
+          >
             {item.text}
           </a>
         </li>
