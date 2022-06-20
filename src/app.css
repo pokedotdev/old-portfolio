@@ -16,3 +16,29 @@
     @apply mx-auto max-w-screen-md px-6 lg:px-0;
   }
 }
+
+/* Chromium Only */
+@supports (contain: paint) and (not (-moz-appearance: none)) and
+  (overflow: overlay) {
+  html {
+    @apply w-screen overflow-x-hidden;
+    overflow: overlay;
+  }
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    background: transparent;
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-gray-300 backdrop-invert;
+    border: 9px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-black;
+    border-width: 8px;
+  }
+}
