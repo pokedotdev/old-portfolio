@@ -6,7 +6,8 @@
       href: 'https://github.com/pokedotdev/twitter-clone',
       tools: [
         'i-logos:remix-icon dark:invert',
-        'i-logos:github-icon dark:invert',
+        'i-logos:prisma dark:invert',
+        'i-logos:unocss dark:invert',
         'i-logos:cloudflare',
       ],
     },
@@ -23,6 +24,16 @@
       tools: [
         'i-logos:wordpress-icon dark:invert',
         'i-logos:webpack',
+        'i-logos:tailwindcss-icon',
+      ],
+    },
+    {
+      title: 'Portfolio',
+      description: 'My bit of internet.',
+      href: 'https://github.com/pokedotdev/poke.dev',
+      tools: [
+        'i-logos:svelte-icon',
+        'i-logos:unocss dark:invert',
         'i-logos:tailwindcss-icon',
       ],
     },
