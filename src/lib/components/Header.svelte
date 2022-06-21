@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Avatar } from '.'
+  import { Avatar, ButtonTheme } from '.'
   import { page } from '$app/stores'
 
   const menu = [
@@ -18,23 +18,27 @@
   ]
 </script>
 
-<header class="justify-betwee container flex h-24 items-center">
-  <nav class="flex items-center gap-8">
-    <a href="/">
-      <Avatar />
-    </a>
-    <ul class="flex gap-4">
-      {#each menu as item}
-        <li>
-          <a
-            href={item.href}
-            class="block rounded-full py-3 px-4 text-gray-600 transition-colors hover:bg-gray-100 hover:text-black"
-            class:text-black={$page.url.pathname === item.href}
-          >
-            {item.text}
-          </a>
-        </li>
-      {/each}
-    </ul>
-  </nav>
+<header class="container flex h-24 items-center justify-between gap-8">
+  <a href="/">
+    <Avatar />
+  </a>
+  <div class="flex flex-auto items-center justify-between">
+    <nav class="flex items-center">
+      <ul class="flex gap-4">
+        {#each menu as item}
+          <li>
+            <a
+              href={item.href}
+              class="{$page.url.pathname === item.href
+                ? 'text-inherit'
+                : 'text-gray hover:text-inherit'} block rounded-full py-3 px-4 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
+              {item.text}
+            </a>
+          </li>
+        {/each}
+      </ul>
+    </nav>
+    <ButtonTheme />
+  </div>
 </header>

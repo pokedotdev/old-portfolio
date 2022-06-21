@@ -3,8 +3,18 @@
 @tailwind utilities;
 
 @layer base {
+  html.dark {
+    color-scheme: dark;
+  }
+
   body {
-    @apply font-sans;
+    @apply font-sans dark:bg-gray-900 dark:text-gray-100;
+  }
+
+  hr {
+    all: unset;
+    @apply my-4 block w-full bg-gray-200 dark:bg-gray-700;
+    height: 1px;
   }
 }
 
@@ -14,5 +24,9 @@
 @layer utilities {
   .container {
     @apply mx-auto max-w-screen-md px-6 lg:px-0;
+  }
+
+  .text-gray {
+    @apply text-gray-500 dark:text-gray-400;
   }
 }

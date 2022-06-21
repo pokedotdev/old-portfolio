@@ -5,8 +5,8 @@
       description: 'Made with Remix & CF Workers',
       href: 'https://github.com/pokedotdev/twitter-clone',
       tools: [
-        'i-logos:remix-icon',
-        'i-logos:github-icon',
+        'i-logos:remix-icon dark:invert',
+        'i-logos:github-icon dark:invert',
         'i-logos:cloudflare',
       ],
     },
@@ -21,7 +21,7 @@
       description: 'WordPress template with TailwindCSS.',
       href: 'https://github.com/pokedotdev/wp-tailwind',
       tools: [
-        'i-logos:wordpress-icon',
+        'i-logos:wordpress-icon dark:invert',
         'i-logos:webpack',
         'i-logos:tailwindcss-icon',
       ],
@@ -35,10 +35,9 @@
 
 <div class="container">
   <section class="mb-24 mt-16">
-    <p class="text-5xl font-black leading-tight">Hey there.</p>
-    <!-- Write a personal description -->
-    <hr class="my-4 w-32" />
-    <p class="text-xl leading-normal text-gray-600">
+    <span class="text-5xl font-black leading-tight">Hey there.</span>
+    <hr class="w-32" />
+    <p class="text-gray text-xl leading-normal">
       My name is Arturo, aka Poke. I'm a Full Stack JavaScript Developer. I like
       to develop websites with amazing tools.
     </p>
@@ -54,7 +53,7 @@
           href="https://zonacraft.net"
           target="_blank"
           rel="noopener noreferrer"
-          class="group block aspect-[6/4] flex-none cursor-pointer overflow-hidden rounded-lg bg-slate-500"
+          class="group block aspect-[6/4] flex-none cursor-pointer overflow-hidden rounded-lg bg-slate-500 dark:bg-slate-700"
           aria-label="Go to ZonaCraft website"
         >
           <div
@@ -64,7 +63,7 @@
         </a>
         <div class="flex flex-col justify-center">
           <h2 class="mb-4 text-2xl font-black">ZonaCraft</h2>
-          <p class="text-lg leading-relaxed text-gray-600">
+          <p class="text-gray text-lg leading-relaxed">
             Minecraft website for the Hispanic community. With more than 5
             million visitors per month.
           </p>
@@ -73,7 +72,7 @@
               href="https://zonacraft.net"
               target="_blank"
               rel="noopener noreferrer"
-              class="group mt-4 inline-flex items-center gap-3 rounded-lg bg-black py-2 px-4 text-lg font-bold text-white transition hover:gap-4"
+              class="group mt-4 inline-flex items-center gap-3 rounded-lg bg-black py-2 px-4 text-lg font-bold text-white transition hover:gap-4 dark:bg-gray-100 dark:text-black"
               style="transition-property: gap;"
             >
               See it
@@ -96,14 +95,11 @@
       {#each openSourceProjects as project}
         <a href={project.href} target="_blank" rel="noopener noreferrer">
           <article
-            class="group flex flex-col rounded-lg bg-gray-100 py-6 px-6 transition-colors hover:bg-gray-200"
+            class="flex flex-col rounded-lg bg-gray-100 py-6 px-6 transition-colors hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
           >
             <h2 class="text-lg font-bold">{project.title}</h2>
-            <p>{project.description}</p>
-            <ul
-              class="mt-2 flex gap-2 grayscale transition group-hover:grayscale-0"
-              style="transition-property: filter;"
-            >
+            <p class="">{project.description}</p>
+            <ul class="mt-2 flex gap-2">
               {#each project.tools as icon}
                 <li class={icon} />
               {/each}
