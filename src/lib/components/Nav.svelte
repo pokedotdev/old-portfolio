@@ -71,7 +71,7 @@
       height: 100%;
       overflow: hidden;
       transition: all 0.3s ease-in-out;
-      transition-property: height, border-radius;
+      transition-property: height;
     }
     .menu nav {
       margin-top: 6rem;
@@ -88,7 +88,6 @@
     }
     .menu-close {
       height: 0%;
-      border-radius: 0 0 100% 100%;
     }
     .menu-close nav {
       opacity: 0;
