@@ -4,8 +4,6 @@
   import { Header, Footer } from '$lib/components'
 </script>
 
-<div class="bg-black text-center text-white">website under development</div>
-
 <Header />
 
 <main>
