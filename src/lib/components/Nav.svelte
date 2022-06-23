@@ -61,7 +61,7 @@
       {/each}
     </ul>
   </nav>
-  <hr class="w-36 !bg-gray-800 sm:hidden" />
+  <hr class="w-36 flex-none !bg-gray-800 sm:hidden" />
   <ButtonTheme />
 </div>
 

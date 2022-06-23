@@ -13,7 +13,7 @@
 
 <button
   on:click={toggleDarkMode}
-  class="mx-auto flex h-10 items-center gap-2 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 sm:m-0"
+  class="mx-auto flex h-10 flex-none items-center gap-2 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 sm:m-0"
   aria-label="Activate {isDark ? 'light' : 'dark'} mode"
   title="Activate {isDark ? 'light' : 'dark'} mode"
 >
