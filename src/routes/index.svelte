@@ -46,7 +46,7 @@
 
 <div class="container">
   <section class="mb-24 mt-16">
-    <span class="text-5xl font-black leading-tight">Hey there.</span>
+    <span class="text-5xl font-bold leading-tight">Hey there.</span>
     <hr class="w-32" />
     <p class="text-gray text-xl leading-normal">
       My name is Arturo, aka Poke. I'm a Full Stack JavaScript Developer. I like
@@ -73,7 +73,7 @@
           />
         </a>
         <div class="flex flex-col justify-center">
-          <h2 class="mb-4 text-2xl font-black">ZonaCraft</h2>
+          <h2 class="mb-4 text-2xl font-bold">ZonaCraft</h2>
           <p class="text-gray text-lg leading-relaxed">
             Minecraft website for the Hispanic community. With more than 5
             million visitors per month.
