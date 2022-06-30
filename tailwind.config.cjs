@@ -2,22 +2,20 @@ const theme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss/types').Config} */
 const config = {
-  content: ["./src/**/*.{html,js,svelte,ts}"],
+  content: ['./src/**/*.{html,js,svelte,.styles.ts}'],
   darkMode: 'class',
   theme: {
     extend: {
-     fontFamily: {
-        sans: ["InterVariable", ...theme.fontFamily.sans],
+      fontFamily: {
+        sans: ['InterVariable', ...theme.fontFamily.sans],
+        display: ['Recoleta', 'InterVariable', ...theme.fontFamily.sans],
       },
     },
   },
   corePlugins: {
     container: false,
   },
+  plugins: [require('@tailwindcss/typography')],
+}
 
-  plugins: [
-    require('@tailwindcss/typography')
-  ],
-};
-
-module.exports = config;
+module.exports = config

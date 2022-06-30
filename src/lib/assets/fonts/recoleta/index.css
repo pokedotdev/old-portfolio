@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Recoleta';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('./Recoleta-Bold.woff2') format('woff2'),
+    url('./Recoleta-Bold.woff') format('woff');
+}
