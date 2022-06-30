@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/env'
-	import { disabledTransitions } from '$lib/utils'
+	import { disabledTransitions, setThemeColor } from '$lib/utils'
 
 	let isDark = browser && document.documentElement.classList.contains('dark')
 
@@ -10,6 +10,7 @@
 		isDark = !isDark
 		document.documentElement.classList.toggle('dark')
 		localStorage.theme = isDark ? 'dark' : 'light'
+		setThemeColor(isDark ? '#0f172a' : '#fff')
 	}
 </script>
 
