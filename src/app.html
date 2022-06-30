@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    %sveltekit.head%
+		%sveltekit.head%
 
-    <!-- Load Dark/Light Theme -->
-    <script>
-      if (
-        localStorage.theme === 'dark' ||
-        (!localStorage.theme &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches)
-      ) {
-        document.documentElement.classList.add('dark')
-      }
-    </script>
-  </head>
-  <body>
-    %sveltekit.body%
-  </body>
+		<!-- Load Dark/Light Theme -->
+		<script>
+			if (
+				localStorage.theme === 'dark' ||
+				(!localStorage.theme &&
+					window.matchMedia('(prefers-color-scheme: dark)').matches)
+			) {
+				document.documentElement.classList.add('dark')
+			}
+		</script>
+	</head>
+	<body>
+		%sveltekit.body%
+	</body>
 </html>

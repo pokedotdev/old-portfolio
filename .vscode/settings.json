@@ -1,10 +1,10 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.fixAll.eslint": true
-  },
-  "conventionalCommits.scopes": ["ui"],
-  "css.lint.unknownAtRules": "ignore"
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true,
+		"source.fixAll.eslint": true
+	},
+	"conventionalCommits.scopes": ["ui"],
+	"css.lint.unknownAtRules": "ignore"
 }

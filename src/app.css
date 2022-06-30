@@ -3,40 +3,40 @@
 @tailwind utilities;
 
 @layer base {
-  html.dark {
-    color-scheme: dark;
-  }
+	html.dark {
+		color-scheme: dark;
+	}
 
-  body {
-    @apply font-sans text-gray-900 dark:bg-gray-900 dark:text-gray-100;
-    @apply selection:bg-indigo-300 selection:text-gray-900 dark:selection:bg-indigo-400;
-    font-weight: 380;
-  }
+	body {
+		@apply font-sans text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+		@apply selection:bg-indigo-300 selection:text-gray-900 dark:selection:bg-indigo-400;
+		font-weight: 380;
+	}
 
-  hr {
-    @apply border-base my-4 block w-full border-t;
-  }
+	hr {
+		@apply border-base my-4 block w-full border-t;
+	}
 }
 
 @layer components {
 }
 
 @layer utilities {
-  .border-base {
-    @apply border-gray-200 dark:border-gray-700;
-  }
+	.border-base {
+		@apply border-gray-200 dark:border-gray-700;
+	}
 
-  .container {
-    @apply mx-auto max-w-screen-md px-6 lg:px-0;
-  }
+	.container {
+		@apply mx-auto max-w-screen-md px-6 lg:px-0;
+	}
 
-  .text-gray {
-    @apply text-gray-600 dark:text-gray-400;
-  }
+	.text-gray {
+		@apply text-gray-600 dark:text-gray-400;
+	}
 }
 
 /* Globals */
 
 .disable-transitions * {
-  transition: none !important;
+	transition: none !important;
 }

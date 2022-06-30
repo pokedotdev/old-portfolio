@@ -7,28 +7,26 @@ import tailwindConfig from './tailwind.config.cjs'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  preprocess: preprocess(),
+	preprocess: preprocess(),
 
-  kit: {
-    adapter: adapter(),
+	kit: {
+		adapter: adapter(),
 
-    vite: {
-      plugins: [
-        UnoCSS({
-          mode: 'svelte-scoped',
-          extractors: [extractorSvelte],
-          presets: [presetIcons({scale: 1.2})],
-        }),
-      ],
-      css: {
-        postcss: {
-          plugins: [
-            TailwindCSS(tailwindConfig),
-          ]
-        }
-      },
-    },
-  },
+		vite: {
+			plugins: [
+				UnoCSS({
+					mode: 'svelte-scoped',
+					extractors: [extractorSvelte],
+					presets: [presetIcons({ scale: 1.2 })],
+				}),
+			],
+			css: {
+				postcss: {
+					plugins: [TailwindCSS(tailwindConfig)],
+				},
+			},
+		},
+	},
 }
 
 export default config
