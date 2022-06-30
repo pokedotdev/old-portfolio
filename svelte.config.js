@@ -1,9 +1,9 @@
 import adapter from '@sveltejs/adapter-auto'
 import preprocess from 'svelte-preprocess'
+import autoprefixer from 'autoprefixer'
 import UnoCSS from 'unocss/vite'
 import { presetIcons, extractorSvelte } from 'unocss'
-import TailwindCSS from 'tailwindcss'
-import tailwindConfig from './tailwind.config.cjs'
+import tailwind from 'tailwindcss'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -22,7 +22,7 @@ const config = {
 			],
 			css: {
 				postcss: {
-					plugins: [TailwindCSS(tailwindConfig)],
+					plugins: [tailwind, autoprefixer],
 				},
 			},
 		},
