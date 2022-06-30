@@ -52,7 +52,7 @@
 			{#each menu as item}
 				<li>
 					<a
-						on:click={toggleMenu}
+						on:click={() => isMenuOpen && toggleMenu()}
 						href={item.href}
 						class="{$page.url.pathname === item.href
 							? 'text-inherit'
