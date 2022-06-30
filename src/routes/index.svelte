@@ -2,7 +2,7 @@
 	const openSourceProjects = [
 		{
 			title: 'Twitter Clone',
-			description: 'Made with Remix & CF Workers',
+			description: 'Made with Remix & CF Workers.',
 			href: 'https://github.com/pokedotdev/twitter-clone',
 			tools: [
 				'i-logos:remix-icon dark:invert',
@@ -46,7 +46,7 @@
 
 <div class="container">
 	<section class="mb-24 mt-16">
-		<span class="font-display text-5xl font-bold leading-tight">
+		<span class="text-gradient font-display text-5xl font-bold leading-tight">
 			Hey there.
 		</span>
 		<hr class="w-32 border-t-2 border-dotted" />
@@ -79,7 +79,9 @@
 					/>
 				</a>
 				<div class="flex flex-col justify-center">
-					<h2 class="mb-2 font-display text-2xl font-bold">ZonaCraft</h2>
+					<h2 class="text-gradient mb-2 font-display text-2xl font-bold">
+						ZonaCraft
+					</h2>
 					<p class="text-gray text-lg leading-relaxed">
 						Minecraft website for the Hispanic community. With more than 5
 						million visitors per month.
@@ -89,7 +91,7 @@
 							href="https://zonacraft.net"
 							target="_blank"
 							rel="noopener noreferrer"
-							class="group mt-4 inline-flex h-11 items-center gap-3 rounded-lg bg-gray-900 px-4 text-lg font-bold text-white transition hover:gap-4 dark:bg-gray-100 dark:text-black"
+							class="group mt-4 inline-flex h-11 items-center gap-3 rounded-lg bg-gray-900 bg-gradient-to-b from-gray-800 px-4 text-lg font-bold text-white transition hover:gap-4 dark:bg-indigo-100 dark:from-gray-100 dark:text-black"
 							style="transition-property: gap;"
 						>
 							See it

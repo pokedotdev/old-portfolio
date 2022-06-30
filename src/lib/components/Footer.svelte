@@ -14,7 +14,7 @@
 </script>
 
 <footer class="container my-8 flex items-center justify-between">
-	<span class="font-display text-2xl font-bold">The End.</span>
+	<span class="text-gradient font-display text-2xl font-bold">The End.</span>
 	<ul class="flex gap-6">
 		{#each socialLinks as social}
 			<li class="flex items-center">
