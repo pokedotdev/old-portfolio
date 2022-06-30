@@ -1,10 +1,12 @@
 <script lang="ts">
   import { browser } from '$app/env'
+  import { disabledTransitions } from '$lib/utils'
 
   let isDark = browser && document.documentElement.classList.contains('dark')
 
   const toggleDarkMode = () => {
     if (!browser) return
+    disabledTransitions()
     isDark = !isDark
     document.documentElement.classList.toggle('dark')
     localStorage.theme = isDark ? 'dark' : 'light'
