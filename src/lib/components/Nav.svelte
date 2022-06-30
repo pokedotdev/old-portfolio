@@ -45,7 +45,7 @@
 	style="transition-property: height;"
 >
 	<nav
-		class="mt-24 flex items-center text-white transition duration-500 sm:mt-0 sm:text-inherit"
+		class="mt-24 flex items-center text-gray-200 transition duration-500 sm:mt-0 sm:text-inherit"
 		style="transition-property: opacity;"
 	>
 		<ul class="flex flex-auto flex-col items-center gap-4 sm:flex-row">
@@ -56,7 +56,7 @@
 						href={item.href}
 						class="{$page.url.pathname === item.href
 							? 'text-inherit'
-							: 'sm:text-gray text-gray-500 hover:text-inherit'} block rounded-full py-3 px-4 font-display text-3xl font-bold transition-colors hover:bg-gray-100 dark:hover:bg-gray-800 sm:font-sans sm:text-base sm:font-normal"
+							: 'sm:text-gray text-gray-500 hover:text-inherit'} block rounded-full py-3 px-4 font-display text-4xl font-bold transition-colors hover:bg-gray-100 dark:hover:bg-gray-800 sm:font-sans sm:text-base sm:font-normal"
 					>
 						{item.text}
 					</a>
