@@ -2,7 +2,6 @@
   import { ButtonTheme } from '.'
   import { page } from '$app/stores'
   import { browser } from '$app/env'
-  import { slide } from 'svelte/transition'
 
   const menu = [
     {
@@ -41,10 +40,14 @@
 </button>
 
 <div
-  class="menu fixed inset-0 z-10 flex flex-auto flex-col items-center gap-4 bg-black sm:static sm:flex-row sm:justify-between sm:bg-transparent"
+  class="menu fixed inset-0 z-10 flex h-screen flex-auto flex-col items-center gap-4 overflow-hidden bg-black transition duration-300 sm:static sm:h-auto sm:flex-row sm:justify-between sm:overflow-auto sm:bg-transparent"
   class:menu-close={!isMenuOpen}
+  style="transition-property: height;"
 >
-  <nav class="flex items-center text-white sm:text-inherit">
+  <nav
+    class="mt-24 flex items-center text-white transition duration-500 sm:mt-0 sm:text-inherit"
+    style="transition-property: opacity;"
+  >
     <ul class="flex flex-auto flex-col items-center gap-4 sm:flex-row">
       {#each menu as item}
         <li>
@@ -53,7 +56,7 @@
             href={item.href}
             class="{$page.url.pathname === item.href
               ? 'text-inherit'
-              : 'sm:text-gray text-gray-500 hover:text-inherit'} block rounded-full py-3 px-4 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
+              : 'sm:text-gray text-gray-500 hover:text-inherit'} block rounded-full py-3 px-4 font-display text-3xl font-bold transition-colors hover:bg-gray-100 dark:hover:bg-gray-800 sm:font-sans sm:text-base sm:font-normal"
           >
             {item.text}
           </a>
@@ -61,33 +64,19 @@
       {/each}
     </ul>
   </nav>
-  <hr class="w-36 flex-none !bg-gray-800 sm:hidden" />
+  <hr
+    class="w-36 flex-none border-t-2 border-dotted !border-gray-800 sm:hidden"
+  />
   <ButtonTheme />
 </div>
 
 <style>
   @media only screen and (max-width: 640px) {
-    .menu {
-      height: 100%;
-      overflow: hidden;
-      transition: all 0.3s ease-in-out;
-      transition-property: height;
-    }
-    .menu nav {
-      margin-top: 6rem;
-      opacity: 1;
-      transition: opacity 0.3s ease-in-out;
-    }
-    .menu nav a {
-      font-size: 1.875rem;
-      line-height: 2.25rem;
-      font-weight: 900;
-    }
     .menu nav a:hover {
       background-color: unset;
     }
     .menu-close {
-      height: 0%;
+      height: 0vh;
     }
     .menu-close nav {
       opacity: 0;

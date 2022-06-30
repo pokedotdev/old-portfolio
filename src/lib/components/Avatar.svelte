@@ -1,5 +1,5 @@
 <div
-  class="h-12 w-12 overflow-hidden rounded-full border-4 border-white bg-gray-300 bg-gradient-to-tl from-gray-400 transition-shadow duration-500 dark:border-gray-700"
+  class="h-12 w-12 overflow-hidden rounded-full border-4 border-white bg-indigo-200 transition-shadow duration-500 dark:border-gray-700"
 >
   <img
     class="pointer-events-none"
@@ -12,13 +12,12 @@
 
 <style>
   div {
-    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 24px rgba(0, 64, 255, 0.1);
   }
   div:hover {
-    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 36px rgba(0, 64, 255, 0.3);
   }
   div img {
     transform: scale(0.9) translate(-8%, 8%);
-    /* shape-rendering: geometricprecision; */
   }
 </style>

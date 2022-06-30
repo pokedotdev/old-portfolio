@@ -18,7 +18,7 @@
 </svelte:head>
 
 <div class="container flex flex-col items-center">
-  <h1 class="my-8 text-9xl font-black">{status}</h1>
+  <h1 class="my-8 font-display text-9xl font-bold">{status}</h1>
   {#if dev && error.stack}
     <pre class="w-full overflow-y-auto border">{error.stack}</pre>
   {/if}
