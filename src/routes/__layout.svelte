@@ -2,10 +2,8 @@
 	import '../app.css'
 	import '@fontsource/inter/variable.css'
 	import '$lib/assets/fonts/recoleta/index.css'
-	import { Header, Footer, Head } from '$lib/components'
+	import { Header, Footer } from '$lib/components'
 </script>
-
-<Head />
 
 <Header />
 
