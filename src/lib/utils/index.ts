@@ -1,3 +1,5 @@
+export const sleep = (ms = 0) => new Promise((r) => setTimeout(r, ms))
+
 /**
  * Conditionally join class names together.
  */
@@ -12,11 +14,10 @@ export const cn = (...args: (string | unknown)[]) => {
  * Disables all element transitions for the given duration.
  * @param ms milliseconds (default: 0)
  */
-export const disabledTransitions = (ms = 0) => {
+export const disabledTransitions = async (ms = 0) => {
 	document.documentElement.classList.add('disable-transitions')
-	setTimeout(() => {
-		document.documentElement.classList.remove('disable-transitions')
-	}, ms)
+	await sleep(ms)
+	document.documentElement.classList.remove('disable-transitions')
 }
 
 export const setThemeColor = (color: string) => {
