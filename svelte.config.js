@@ -15,7 +15,6 @@ const config = {
 		vite: {
 			plugins: [
 				UnoCSS({
-					mode: 'svelte-scoped',
           include: [/\.svelte$/, /\.md?$/, /\.ts$/],
 					extractors: [extractorSvelte],
 					presets: [presetIcons({ scale: 1.2 })],
