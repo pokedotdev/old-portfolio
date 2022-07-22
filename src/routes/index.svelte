@@ -2,13 +2,13 @@
 	const openSourceProjects = [
 		{
 			title: 'Twitter Clone',
-			description: 'Made with Remix & CF Workers.',
+			description: 'Made with Remix & EdgeDB.',
 			href: 'https://github.com/pokedotdev/twitter-clone',
 			tools: [
 				'i-logos:remix-icon dark:invert',
-				'i-logos:prisma dark:invert',
 				'i-logos:unocss dark:invert',
-				'i-logos:cloudflare',
+				'i-logos:fly',
+				'i-logos:docker-icon',
 			],
 		},
 		{
